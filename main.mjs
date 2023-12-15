@@ -1,3 +1,4 @@
+import logger from "./src/logger.mjs";
 import axios from "axios";
 
 import { match } from "./src/users.mjs";
@@ -18,11 +19,21 @@ const awork = axios.create({
 const { data: clockodo_users } = await clockodo.get("/users");
 const { data: awork_users } = await awork.get("/users");
 
+logger.info("Fetched clockodo users", {
+  count: clockodo_users.users.length,
+});
+logger.info("Fetched awork users", {
+  count: awork_users.length,
+});
+
 const users = match({
   clockodo: clockodo_users,
   awork: awork_users,
 });
-console.dir({ users }, { depth: null });
+
+logger.info("Matched users", {
+  count: users.matched.length,
+});
 
 // -- absences
 
@@ -40,18 +51,28 @@ const categoryMap = {
 const { data: clockodo_data_absences } = await clockodo.get("/absences", {
   params: { year: 2023 },
 });
+
+logger.info("Fetched clockodo absences", {
+  count: clockodo_data_absences.absences.length,
+});
+
 const clockodo_absences = clockodo_data_absences.absences
   .filter(({ users_id: userId }) => userId in users.clockodo_to_awork)
   .filter(({ type }) => type in categoryMap)
   .filter(({ status }) => status == 1); // status=1 is approved
-console.dir({ clockodo_absences }, { depth: null });
+
+logger.info("Filtered clockodo absences", {
+  count: clockodo_absences.length,
+});
 
 const { data: awork_data_absences } = await awork.get("/absences", {
   params: {
     filterby: "startswith(externalProvider,'clockodo-absences')",
   },
 });
-console.dir({ awork_data_absences }, { depth: null });
+logger.info("Fetched awork absences", {
+  count: awork_data_absences.length,
+});
 
 await Promise.allSettled(
   awork_data_absences.map(
@@ -67,9 +88,10 @@ await Promise.allSettled(
       }),
   ),
 );
+logger.info("Cleared awork absences");
 
 clockodo_absences.forEach(async (absence) => {
-  const { data } = await awork.post("/absences", {
+  const entity = {
     userId: users.clockodo_to_awork[absence.users_id],
     startOn: absence.date_since,
     endOn: absence.date_until,
@@ -77,10 +99,19 @@ clockodo_absences.forEach(async (absence) => {
       categoryMap[absence.type] + (absence.note ? ": " + absence.note : ""),
     isReadOnly: true,
     externalProvider: "clockodo-absences",
-    isHalfDayOnStart: absence.count_days % 1 != 0
-  });
-  console.dir({ data }, { depth: null });
+    isHalfDayOnStart: absence.count_days % 1 != 0,
+  };
+  try {
+    const { data } = await awork.post("/absences", entity);
+    logger.debug("Created awork absences", entity);
+  } catch (error) {
+    logger.error("Failed to create awork absence", {
+      error: error.response.data,
+      entity,
+    });
+  }
 });
+logger.info("Created awork absences", { count: clockodo_absences.length });
 
 // -- non business days
 
@@ -90,14 +121,18 @@ const { data: clockodo_data_nonbusinessdays } = await clockodo.get(
     params: { year: 2023 },
   },
 );
-//console.dir({ clockodo_data_nonbusinessdays }, { depth: null });
+logger.info("Fetched clockodo non-business-days", {
+  count: clockodo_data_nonbusinessdays.nonbusinessdays.length,
+});
 
 const { data: awork_data_nonbusinessdays } = await awork.get("/absences", {
   params: {
     filterby: "startswith(externalProvider,'clockodo-nonbusinessdays')",
   },
 });
-//console.dir({ awork_data_nonbusinessdays, count: awork_data_nonbusinessdays.length }, { depth: null });
+logger.info("Fetched awork non-business-days", {
+  count: awork_data_nonbusinessdays.length,
+});
 
 await Promise.allSettled(
   awork_data_nonbusinessdays.map(
@@ -113,12 +148,12 @@ await Promise.allSettled(
       }),
   ),
 );
+logger.info("Cleared awork non-business-days");
 
-//*
 clockodo_data_nonbusinessdays.nonbusinessdays.forEach(
   async (nonbusinessday) => {
     users.matched.forEach(async (user) => {
-      const request = {
+      const entity = {
         userId: user.awork_user_id,
         startOn: nonbusinessday.date,
         endOn: nonbusinessday.date,
@@ -128,12 +163,18 @@ clockodo_data_nonbusinessdays.nonbusinessdays.forEach(
       };
 
       try {
-        const { data } = await awork.post("/absences", request);
-        //console.dir({ nonbusinessday, data }, { depth: null });
+        const { data } = await awork.post("/absences", entity);
+        logger.debug("Created awork non-business-day", entity);
       } catch (error) {
-        console.error({ error: error.response.data, request });
+        logger.error("Failed to create awork non-business-day", {
+          error: error.response.data,
+          entity,
+        });
       }
     });
   },
 );
-//*/
+logger.info("Created awork non-business-days", {
+  count:
+    clockodo_data_nonbusinessdays.nonbusinessdays.length * users.matched.length,
+});
