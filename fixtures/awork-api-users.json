@@ -1,0 +1,140 @@
+[
+  {
+    "id": "cf8c614f-a9c0-4755-8a8f-9978b27e5417",
+    "status": {
+      "invitationAccepted": true,
+      "isDeactivated": false
+    },
+    "createdOn": "2023-12-14T22:17:48.7624914Z",
+    "createdBy": "ebeda173-0712-4cab-af50-3f6624201192",
+    "updatedOn": "2023-12-14T22:20:51.4828036Z",
+    "updatedBy": "01010001-0000-0000-0000-111111111111",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "c96305f2-1df3-439d-ab2b-bd9496fd3332",
+        "isDeleted": false,
+        "createdOn": "2023-12-14T22:17:48.9115911Z",
+        "createdBy": "ebeda173-0712-4cab-af50-3f6624201192",
+        "updatedOn": "2023-12-14T22:17:48.9115916Z",
+        "updatedBy": "ebeda173-0712-4cab-af50-3f6624201192",
+        "value": "clockodo@mail.gelungen.es",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638381892514828000,
+    "tags": [],
+    "teams": [],
+    "firstName": "clockodo1",
+    "title": "",
+    "position": "",
+    "language": "en-US"
+  },
+  {
+    "id": "02c106da-63ce-4138-a60b-e730232ca57d",
+    "status": {
+      "invitationAccepted": true,
+      "isDeactivated": false
+    },
+    "createdOn": "2023-12-14T22:17:48.7352767Z",
+    "createdBy": "ebeda173-0712-4cab-af50-3f6624201192",
+    "updatedOn": "2023-12-14T22:21:09.3757029Z",
+    "updatedBy": "01010001-0000-0000-0000-111111111111",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "65b05d85-781d-4304-8c9a-12de8c67ee2a",
+        "isDeleted": false,
+        "createdOn": "2023-12-14T22:17:48.8301122Z",
+        "createdBy": "ebeda173-0712-4cab-af50-3f6624201192",
+        "updatedOn": "2023-12-14T22:17:48.8301129Z",
+        "updatedBy": "ebeda173-0712-4cab-af50-3f6624201192",
+        "value": "clockodo2@mail.gelungen.es",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638381892693757000,
+    "tags": [],
+    "teams": [],
+    "firstName": "clockodo2",
+    "title": "",
+    "position": "",
+    "language": "en-US"
+  },
+  {
+    "id": "f487fb83-9793-4330-be1e-9131c890bd32",
+    "status": {
+      "invitationAccepted": false,
+      "isDeactivated": false
+    },
+    "createdOn": "2023-12-14T22:17:48.681894Z",
+    "createdBy": "ebeda173-0712-4cab-af50-3f6624201192",
+    "updatedOn": "2023-12-14T22:17:48.906678Z",
+    "updatedBy": "ebeda173-0712-4cab-af50-3f6624201192",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "ee424491-a3e5-47a9-8273-0c877c7a2719",
+        "isDeleted": false,
+        "createdOn": "2023-12-14T22:17:48.8148938Z",
+        "createdBy": "ebeda173-0712-4cab-af50-3f6624201192",
+        "updatedOn": "2023-12-14T22:17:48.8148942Z",
+        "updatedBy": "ebeda173-0712-4cab-af50-3f6624201192",
+        "value": "awork2@mail.gelungen.es",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638381890689066800,
+    "tags": [],
+    "teams": [],
+    "firstName": "Awork2",
+    "title": "",
+    "position": "",
+    "language": "en-US"
+  },
+  {
+    "id": "ebeda173-0712-4cab-af50-3f6624201192",
+    "status": {
+      "invitationAccepted": true,
+      "isDeactivated": false
+    },
+    "createdOn": "2023-12-14T22:16:08.594897Z",
+    "createdBy": "ebeda173-0712-4cab-af50-3f6624201192",
+    "updatedOn": "2023-12-14T22:16:22.3889678Z",
+    "updatedBy": "ebeda173-0712-4cab-af50-3f6624201192",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "774f30e9-fc5b-4631-9db0-f2bf763d5841",
+        "isDeleted": false,
+        "createdOn": "2023-12-14T22:16:10.3161158Z",
+        "createdBy": "01010001-0000-0000-0000-111111111111",
+        "updatedOn": "2023-12-14T22:16:10.3161163Z",
+        "updatedBy": "01010001-0000-0000-0000-111111111111",
+        "value": "awork@mail.gelugen.es",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638381889823889700,
+    "tags": [],
+    "teams": [],
+    "firstName": "John",
+    "language": "en-US"
+  }
+]
