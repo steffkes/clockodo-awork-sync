@@ -31,7 +31,7 @@ const schema = {
             type: "object",
             required: ["type", "value"],
             properties: {
-              type: { const: "email" },
+              type: { enum: ["social", "email", "phone"] },
               value: { type: "string" },
             },
           },

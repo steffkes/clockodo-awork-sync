@@ -1,0 +1,624 @@
+[
+  {
+    "id": "982f9e83-11d9-4f27-848a-e9bf9f40a896",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2023-11-21T13:01:52.9533902Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-11-21T13:02:38.3868448Z",
+    "updatedBy": "01010001-0000-0000-0000-111111111111",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "a7fb8311-e259-4eca-ba2f-b6e8727c595f",
+        "isDeleted": false,
+        "createdOn": "2023-11-21T13:01:53.063976Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2023-11-21T13:01:53.063977Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe1@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638361685583868400,
+    "tags": [],
+    "teams": [],
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "gender": "female",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "0281c69f-10fd-4499-a9a7-57296e89c9aa",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2023-11-09T17:23:17.1166849Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-11-13T07:26:35.8442502Z",
+    "updatedBy": "01010001-0000-0000-0000-111111111111",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "e49a7ff6-ba0f-43c3-8d5b-df25dcb4e74c",
+        "isDeleted": false,
+        "createdOn": "2023-11-09T17:23:17.2713514Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2023-11-09T17:23:17.2713525Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "awork@mail.gelungen.es",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638354571958442500,
+    "tags": [],
+    "teams": [],
+    "firstName": "Johne",
+    "lastName": "Doe",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "en-US"
+  },
+  {
+    "id": "5b2de699-5792-4e16-ab9b-25ddc68dceb4",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2023-08-29T05:05:34.2985865Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-08-29T13:53:29.7035276Z",
+    "updatedBy": "5b2de699-5792-4e16-ab9b-25ddc68dceb4",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "8006ae72-80cf-45e1-bb28-3e02376d77e9",
+        "isDeleted": false,
+        "createdOn": "2023-08-29T05:05:34.6207789Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2023-08-29T05:05:34.6207794Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe3@exampl.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638289140097035300,
+    "tags": [],
+    "teams": [
+      {
+        "id": "d4139ebe-4bb0-ec11-997e-38563d6e6dce",
+        "name": "alles",
+        "icon": "computer",
+        "color": "red"
+      }
+    ],
+    "firstName": "John",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "7ea9be7d-b6e2-4a93-a668-7303fc69f3f2",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2023-08-18T05:59:30.5832764Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-08-22T07:27:24.308459Z",
+    "updatedBy": "7ea9be7d-b6e2-4a93-a668-7303fc69f3f2",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "042e7fc7-91cc-44e8-87d8-f5a340cb3c8a",
+        "isDeleted": false,
+        "createdOn": "2023-08-18T05:59:30.9878248Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2023-08-18T05:59:30.9878253Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe4@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638282860443084500,
+    "tags": [],
+    "teams": [
+      {
+        "id": "d4139ebe-4bb0-ec11-997e-38563d6e6dce",
+        "name": "alles",
+        "icon": "computer",
+        "color": "red"
+      }
+    ],
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "female",
+    "title": "",
+    "position": "Manager",
+    "language": "de-DE"
+  },
+  {
+    "id": "f68cf2a8-18f4-4c26-b9e5-fc375cbd39e9",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2022-08-17T11:24:54.8961331Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-09-04T13:23:34.2889113Z",
+    "updatedBy": "f68cf2a8-18f4-4c26-b9e5-fc375cbd39e9",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "c6956734-1f1e-ed11-bd6e-14cb652765f3",
+        "isDeleted": false,
+        "createdOn": "2022-08-17T11:24:55.6686874Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2022-08-17T11:24:55.6686906Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe5@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638294306142889100,
+    "tags": [],
+    "teams": [
+      {
+        "id": "d4139ebe-4bb0-ec11-997e-38563d6e6dce",
+        "name": "alles",
+        "icon": "computer",
+        "color": "red"
+      }
+    ],
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "118bad03-0063-4cf6-89cc-d1e2fe5b920f",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2022-03-31T13:40:20.2394783Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-05-19T06:16:00.7992516Z",
+    "updatedBy": "118bad03-0063-4cf6-89cc-d1e2fe5b920f",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "2b288618-f8b0-ec11-997e-38563d6e6dce",
+        "isDeleted": false,
+        "createdOn": "2022-03-31T13:40:20.9050745Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2022-03-31T13:40:20.9050773Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe6@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638200737607992600,
+    "tags": [],
+    "teams": [
+      {
+        "id": "d4139ebe-4bb0-ec11-997e-38563d6e6dce",
+        "name": "alles",
+        "icon": "computer",
+        "color": "red"
+      }
+    ],
+    "firstName": "John",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "10fd6356-5f11-419b-9e7d-94fe7ec41c4a",
+    "status": { "invitationAccepted": true, "isDeactivated": true },
+    "createdOn": "2022-02-04T14:41:31.7550172Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-11-21T12:56:32.3715162Z",
+    "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "isArchived": false,
+    "isDeactivated": true,
+    "deactivatedOn": "2023-11-21T12:56:32.3714498Z",
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "92802e8a-c885-ec11-a506-38563d686c6e",
+        "isDeleted": false,
+        "createdOn": "2022-02-04T14:41:32.2115066Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2022-02-04T14:41:32.2115095Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe7@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638361681923715200,
+    "tags": [],
+    "teams": [],
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "gender": "female",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "0fc58645-44c1-440a-aab0-2d5c841e36e3",
+    "status": { "invitationAccepted": true, "isDeactivated": true },
+    "createdOn": "2022-01-20T10:55:36.479216Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-11-09T17:22:29.240645Z",
+    "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "isArchived": false,
+    "isDeactivated": true,
+    "deactivatedOn": "2023-11-09T17:22:29.240558Z",
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "6ebc2a7b-df79-ec11-94f6-dc984040d6c7",
+        "isDeleted": false,
+        "createdOn": "2022-01-20T10:55:36.831973Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2022-01-26T06:31:01.7832272Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe8@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638351473492406400,
+    "tags": [],
+    "teams": [],
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "0752af85-c2f2-43f8-9017-02d76055f008",
+    "status": { "invitationAccepted": true, "isDeactivated": true },
+    "createdOn": "2022-01-20T10:55:36.428526Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-11-09T17:22:19.2462215Z",
+    "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "isArchived": false,
+    "isDeactivated": true,
+    "deactivatedOn": "2023-11-09T17:22:19.2461461Z",
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "6fbc2a7b-df79-ec11-94f6-dc984040d6c7",
+        "isDeleted": false,
+        "createdOn": "2022-01-20T10:55:36.8152126Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2022-01-20T10:55:36.8152145Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe8@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638351473392462200,
+    "tags": [],
+    "teams": [],
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "female",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "fccf1abe-ab11-4e24-b54e-44872d7954d6",
+    "status": { "invitationAccepted": true, "isDeactivated": true },
+    "createdOn": "2021-11-01T10:08:40.3984367Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-12-04T09:55:09.2076376Z",
+    "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "isArchived": false,
+    "isDeactivated": true,
+    "deactivatedOn": "2023-12-04T09:55:09.2075259Z",
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "fd6bf1ae-fb3a-ec11-981f-501ac527b592",
+        "isDeleted": false,
+        "createdOn": "2021-11-01T10:08:40.8081754Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2023-08-18T05:59:52.8504259Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe9@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638372805092076400,
+    "tags": [],
+    "teams": [
+      {
+        "id": "d4139ebe-4bb0-ec11-997e-38563d6e6dce",
+        "name": "alles",
+        "icon": "computer",
+        "color": "red"
+      }
+    ],
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "female",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "72548b92-ff09-4409-a3ed-5028a10ea341",
+    "status": { "invitationAccepted": true, "isDeactivated": true },
+    "createdOn": "2021-09-13T06:51:56.9935212Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-11-08T19:12:52.2444789Z",
+    "updatedBy": "01010001-0000-0000-0000-111111111111",
+    "isArchived": false,
+    "isDeactivated": true,
+    "deactivatedOn": "2022-05-11T12:32:23.3842785Z",
+    "hasImage": false,
+    "userContactInfos": [
+      {
+        "id": "59542115-5f14-ec11-ae72-0050f26748f5",
+        "isDeleted": false,
+        "createdOn": "2021-09-13T06:51:57.4263427Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2021-09-13T06:51:57.4263441Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe10@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638350675722444800,
+    "tags": [],
+    "teams": [],
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "5b2c5a01-31f4-4f4b-ae66-17cf42ada8d5",
+    "status": { "invitationAccepted": true, "isDeactivated": true },
+    "createdOn": "2021-08-31T09:09:08.4015162Z",
+    "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "updatedOn": "2023-11-08T19:12:52.7697134Z",
+    "updatedBy": "01010001-0000-0000-0000-111111111111",
+    "isArchived": false,
+    "isDeactivated": true,
+    "deactivatedOn": "2022-02-25T16:25:31.603621Z",
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "69734c18-3b0a-ec11-b563-dc984023d47e",
+        "isDeleted": false,
+        "createdOn": "2021-08-31T09:09:08.7893624Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2021-08-31T09:09:08.7893645Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe11@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638350675727697200,
+    "tags": [],
+    "teams": [],
+    "firstName": "John",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2021-08-24T11:57:26.8923098Z",
+    "createdBy": "4242f394-2d00-ec11-b563-dc984023d47e",
+    "updatedOn": "2023-05-19T08:56:30.6255713Z",
+    "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "e963fed3-dae7-4cae-b4dd-1a5ce41e2001",
+        "isDeleted": false,
+        "createdOn": "2023-05-19T08:56:30.4995922Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2023-05-19T08:56:30.4995927Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "https://www.linkedin.com/in/john-doe/",
+        "type": "social",
+        "subType": "linkedin",
+        "isAddress": false
+      },
+      {
+        "id": "ec62cd71-d204-ec11-b563-dc984023d47e",
+        "isDeleted": false,
+        "createdOn": "2021-08-24T11:57:27.2539211Z",
+        "createdBy": "4242f394-2d00-ec11-b563-dc984023d47e",
+        "updatedOn": "2023-05-19T08:56:30.4599081Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe12@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      },
+      {
+        "id": "095871f5-f104-ec11-b563-dc984023d47e",
+        "isDeleted": false,
+        "createdOn": "2021-08-24T15:43:05.0387712Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2021-08-24T15:43:05.0387728Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "+11232343424",
+        "type": "phone",
+        "subType": "mobile",
+        "isAddress": false
+      },
+      {
+        "id": "0a5871f5-f104-ec11-b563-dc984023d47e",
+        "isDeleted": false,
+        "createdOn": "2021-08-24T15:43:05.0862043Z",
+        "createdBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "updatedOn": "2021-08-24T15:43:05.0862068Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "john.doe",
+        "type": "social",
+        "subType": "instagram",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638200833906255700,
+    "tags": [],
+    "teams": [
+      {
+        "id": "d4139ebe-4bb0-ec11-997e-38563d6e6dce",
+        "name": "alles",
+        "icon": "computer",
+        "color": "red"
+      },
+      {
+        "id": "972af92a-f8b0-ec11-997e-38563d6e6dce",
+        "name": "Buchhaltung",
+        "icon": "attach_money",
+        "color": "coral"
+      }
+    ],
+    "firstName": "John",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "male",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "1aa1c060-f16b-46b7-ade4-72f0689d66c2",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2021-08-24T11:57:06.5856299Z",
+    "createdBy": "4242f394-2d00-ec11-b563-dc984023d47e",
+    "updatedOn": "2023-08-18T06:00:09.6822767Z",
+    "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "5dcbdc65-d204-ec11-b563-dc984023d47e",
+        "isDeleted": false,
+        "createdOn": "2021-08-24T11:57:06.945294Z",
+        "createdBy": "4242f394-2d00-ec11-b563-dc984023d47e",
+        "updatedOn": "2023-08-18T06:00:09.569873Z",
+        "updatedBy": "5a8ba95a-0732-4284-8061-c3d4e6561400",
+        "value": "doe13@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638279352096822800,
+    "tags": [],
+    "teams": [
+      {
+        "id": "d4139ebe-4bb0-ec11-997e-38563d6e6dce",
+        "name": "alles",
+        "icon": "computer",
+        "color": "red"
+      }
+    ],
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "female",
+    "title": "",
+    "position": "",
+    "language": "de-DE"
+  },
+  {
+    "id": "96d3677c-8906-4881-aeae-1be05549fd1a",
+    "status": { "invitationAccepted": true, "isDeactivated": false },
+    "createdOn": "2021-08-24T11:57:06.5533305Z",
+    "createdBy": "4242f394-2d00-ec11-b563-dc984023d47e",
+    "updatedOn": "2023-11-25T14:26:34.3812986Z",
+    "updatedBy": "96d3677c-8906-4881-aeae-1be05549fd1a",
+    "isArchived": false,
+    "isDeactivated": false,
+    "hasImage": true,
+    "userContactInfos": [
+      {
+        "id": "5ccbdc65-d204-ec11-b563-dc984023d47e",
+        "isDeleted": false,
+        "createdOn": "2021-08-24T11:57:06.9307346Z",
+        "createdBy": "4242f394-2d00-ec11-b563-dc984023d47e",
+        "updatedOn": "2021-08-24T11:57:06.9307361Z",
+        "updatedBy": "4242f394-2d00-ec11-b563-dc984023d47e",
+        "value": "doe14@example.org",
+        "type": "email",
+        "subType": "work",
+        "isAddress": false
+      }
+    ],
+    "resourceVersion": 638365191943813000,
+    "tags": [],
+    "teams": [
+      {
+        "id": "972af92a-f8b0-ec11-997e-38563d6e6dce",
+        "name": "Buchhaltung",
+        "icon": "attach_money",
+        "color": "coral"
+      }
+    ],
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "birthDate": "1970-01-01T00:00:00Z",
+    "gender": "female",
+    "title": "",
+    "position": "Backoffice Manager",
+    "language": "de-DE"
+  }
+]
