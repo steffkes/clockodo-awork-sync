@@ -41,6 +41,13 @@ const categoryMap = {
   1: "🏖️ Urlaub",
   3: "🏖️ Urlaub",
 
+  2: "🙅 Sonstige",
+  10: "🙅 Sonstige",
+  6: "🙅 Sonstige",
+  14: "🙅 Sonstige",
+  7: "🙅 Sonstige",
+  13: "🙅 Sonstige",
+
   4: "🤒 Krank",
   15: "🤒 Krank",
   11: "🤒 Krank",
