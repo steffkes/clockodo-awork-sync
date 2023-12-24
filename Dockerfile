@@ -5,4 +5,4 @@ COPY . /app
 
 RUN yarn install --production --frozen-lockfile
 
-CMD node main.mjs
+CMD node /app/main.mjs
