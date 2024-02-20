@@ -56,7 +56,7 @@ const categoryMap = {
 };
 
 const { data: clockodo_data_absences } = await clockodo.get("/absences", {
-  params: { year: 2023 },
+  params: { year: 2024 },
 });
 
 logger.info("Fetched clockodo absences", {
@@ -125,7 +125,7 @@ logger.info("Created awork absences", { count: clockodo_absences.length });
 const { data: clockodo_data_nonbusinessdays } = await clockodo.get(
   "/nonbusinessdays",
   {
-    params: { year: 2023 },
+    params: { year: 2024 },
   },
 );
 logger.info("Fetched clockodo non-business-days", {
