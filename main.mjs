@@ -3,6 +3,21 @@ import axios from "axios";
 
 import { match } from "./src/users.mjs";
 
+if (
+  !(
+    process.env.CLOCKODO_API_USER &&
+    process.env.CLOCKODO_API_KEY &&
+    process.env.AWORK_API_KEY
+  )
+) {
+  logger.error("environment variables missing", {
+    CLOCKODO_API_USER: !!process.env.CLOCKODO_API_USER,
+    CLOCKODO_API_KEY: !!process.env.CLOCKODO_API_KEY,
+    AWORK_API_KEY: !!process.env.AWORK_API_KEY,
+  });
+  process.exit(1);
+}
+
 const clockodo = axios.create({
   baseURL: "https://my.clockodo.com/api",
   auth: {
