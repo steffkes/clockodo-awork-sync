@@ -31,8 +31,25 @@ const awork = axios.create({
   headers: { Authorization: "Bearer " + process.env.AWORK_API_KEY },
 });
 
-const { data: clockodo_users } = await clockodo.get("/users");
-const { data: awork_users } = await awork.get("/users");
+try {
+  const { data: clockodo_users } = await clockodo.get("/users");
+} catch (error) {
+  logger.error("Request to clockodo failed", {
+    status: error.response.status,
+    error: error.response.data.error,
+  });
+  process.exit(2);
+}
+
+try {
+  const { data: awork_users } = await awork.get("/users");
+} catch (error) {
+  logger.error("Request to awork failed", {
+    status: error.response.status,
+    error: error.response.data,
+  });
+  process.exit(2);
+}
 
 logger.info("Fetched clockodo users", {
   count: clockodo_users.users.length,
