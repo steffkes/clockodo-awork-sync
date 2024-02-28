@@ -31,23 +31,33 @@ const awork = axios.create({
   headers: { Authorization: "Bearer " + process.env.AWORK_API_KEY },
 });
 
+let clockodo_users = {};
 try {
-  const { data: clockodo_users } = await clockodo.get("/users");
+  clockodo_users = (await clockodo.get("/users")).data;
 } catch (error) {
-  logger.error("Request to clockodo failed", {
-    status: error.response.status,
-    error: error.response.data.error,
-  });
+  if (axios.isAxiosError(error)) {
+    logger.error("Request to clockodo failed", {
+      status: error.response.status,
+      error: error.response.data.error,
+    });
+  } else {
+    logger.error(error);
+  }
   process.exit(2);
 }
 
+let awork_users = [];
 try {
-  const { data: awork_users } = await awork.get("/users");
+  awork_users = (await awork.get("/users")).data;
 } catch (error) {
-  logger.error("Request to awork failed", {
-    status: error.response.status,
-    error: error.response.data,
-  });
+  if (axios.isAxiosError(error)) {
+    logger.error("Request to awork failed", {
+      status: error.response.status,
+      error: error.response.data,
+    });
+  } else {
+    logger.error(error);
+  }
   process.exit(2);
 }
 
