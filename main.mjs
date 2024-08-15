@@ -1,5 +1,6 @@
 import logger from "./src/logger.mjs";
 import axios from "axios";
+import rateLimit from "axios-rate-limit";
 
 import { match } from "./src/users.mjs";
 
@@ -26,10 +27,36 @@ const clockodo = axios.create({
   },
 });
 
-const awork = axios.create({
-  baseURL: "https://api.awork.com/api/v1",
-  headers: { Authorization: "Bearer " + process.env.AWORK_API_KEY },
-});
+const awork = rateLimit(
+  axios.create({
+    baseURL: "https://api.awork.com/api/v1",
+    headers: { Authorization: "Bearer " + process.env.AWORK_API_KEY },
+  }),
+  { maxRPS: 25 },
+);
+
+awork.interceptors.response.use(
+  function (response) {
+    logger.debug(
+      "awork Rate-Limit: %d/%d per second, %d/%d per minute",
+      response.headers["x-ratelimit-remaining-second"],
+      response.headers["x-ratelimit-limit-second"],
+      response.headers["x-ratelimit-remaining-minute"],
+      response.headers["x-ratelimit-limit-minute"],
+    );
+    return response;
+  },
+  function (error) {
+    logger.error(
+      "awork Rate-Limit: %d/%d per second, %d/%d per minute",
+      error.response.headers["x-ratelimit-remaining-second"],
+      error.response.headers["x-ratelimit-limit-second"],
+      error.response.headers["x-ratelimit-remaining-minute"],
+      error.response.headers["x-ratelimit-limit-minute"],
+    );
+    return Promise.reject(error);
+  },
+);
 
 let clockodo_users = {};
 try {
